@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import url('normalize.css'); /* bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -12,4 +12,145 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 28px;
+}
+
+.header-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list__line {
+  margin-right: 35px;
+}
+
+.header-list__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-list__link:hover {
+  color: #00bcd4;
+}
+
+.container {
+  margin: 30px;
+}
+
+.btn-back {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.details__image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.details__title {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.details__score {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #f9c400;
+}
+
+.details__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.details__list-line {
+  margin-right: 16px;
+}
+
+.details__list-link {
+  color: #0074d9;
+  text-decoration: none;
+  border-bottom: 1px solid #0074d9;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.details__list-link:hover {
+  border-bottom: 2px solid #0074d9;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="search"] {
+  padding: 10px;
+  border: 1px solid;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+  width: 30%;
+  font-size: 16px;
+}
+
+.btn-search {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.movie-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.movie-list_line {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
