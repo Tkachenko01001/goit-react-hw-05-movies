@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.07d3183d.js",
+    "main.css": "/goit-react-hw-05-movies/static/css/main.2bdafb12.css",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.404aba43.js",
+    "static/js/415.2ab1cdf6.chunk.js": "/goit-react-hw-05-movies/static/js/415.2ab1cdf6.chunk.js",
+    "static/js/134.c83a4a4f.chunk.js": "/goit-react-hw-05-movies/static/js/134.c83a4a4f.chunk.js",
+    "static/js/828.0bde3484.chunk.js": "/goit-react-hw-05-movies/static/js/828.0bde3484.chunk.js",
+    "static/js/597.976a05ac.chunk.js": "/goit-react-hw-05-movies/static/js/597.976a05ac.chunk.js",
+    "static/js/681.0088d913.chunk.js": "/goit-react-hw-05-movies/static/js/681.0088d913.chunk.js",
+    "static/js/243.f2788dc2.chunk.js": "/goit-react-hw-05-movies/static/js/243.f2788dc2.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.7acaea2f.css.map": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/goit-react-hw-05-movies/static/js/main.07d3183d.js.map"
+    "main.2bdafb12.css.map": "/goit-react-hw-05-movies/static/css/main.2bdafb12.css.map",
+    "main.404aba43.js.map": "/goit-react-hw-05-movies/static/js/main.404aba43.js.map",
+    "415.2ab1cdf6.chunk.js.map": "/goit-react-hw-05-movies/static/js/415.2ab1cdf6.chunk.js.map",
+    "134.c83a4a4f.chunk.js.map": "/goit-react-hw-05-movies/static/js/134.c83a4a4f.chunk.js.map",
+    "828.0bde3484.chunk.js.map": "/goit-react-hw-05-movies/static/js/828.0bde3484.chunk.js.map",
+    "597.976a05ac.chunk.js.map": "/goit-react-hw-05-movies/static/js/597.976a05ac.chunk.js.map",
+    "681.0088d913.chunk.js.map": "/goit-react-hw-05-movies/static/js/681.0088d913.chunk.js.map",
+    "243.f2788dc2.chunk.js.map": "/goit-react-hw-05-movies/static/js/243.f2788dc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.2bdafb12.css",
+    "static/js/main.404aba43.js"
   ]
 }
