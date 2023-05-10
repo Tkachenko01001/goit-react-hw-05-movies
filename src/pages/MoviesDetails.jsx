@@ -1,4 +1,4 @@
-import { useParams, Outlet, Link, useNavigate } from 'react-router-dom'
+import { useParams, Outlet, Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import axios from "axios";
 import { URL, API_KEY } from './Home';
@@ -7,7 +7,6 @@ const MoviesDetails = () => {
     const { movieId } = useParams();
 
     const [movie, setMovie] = useState(null);
-    const navigate = useNavigate();
 
     useEffect(() => {
         axios.get(`${URL}/3/movie/${movieId}?api_key=${API_KEY}`)
@@ -19,14 +18,13 @@ const MoviesDetails = () => {
             });
     }, [movieId])
 
-    function handleGoBack() {
-      navigate(-1);
-    }
+    const location = useLocation();
+    const cameBack = location.state?.from ?? '/';
 
     return (
         <div className='details'>
             <div>
-                <button type='button' className='btn-back' onClick={handleGoBack}>Back</button>
+                <Link to={cameBack} className='btn-back'>Go Back</Link>
             </div>
             {movie && (
                 <>
@@ -40,10 +38,10 @@ const MoviesDetails = () => {
                     <p>Additional information</p>
                     <ul className='details__list'>
                         <li className='details__list-line'>
-                            <Link to="Cast" className='details__list-link'>Cast</Link>
+                            <Link to="Cast" state={{ from: cameBack }} className='details__list-link'>Cast</Link>
                         </li>
                         <li className='details__list-line'>
-                            <Link to="Reviews" className='details__list-link'>Reviews</Link>
+                            <Link to="Reviews" state={{ from: cameBack }} className='details__list-link'>Reviews</Link>
                         </li>
                     </ul>
                     <Outlet />
